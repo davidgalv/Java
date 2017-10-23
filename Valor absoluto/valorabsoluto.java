@@ -50,10 +50,11 @@ public class valorabsoluto
 				}
 				
 				//Comprobar datos 
-				if (respuesta  != 's' || respuesta != 'S' || respuesta != 'n'|| respuesta != 'N') {
+				do  {
 					System.out.println ("Escriba Si o No");
 					respuesta = teclado.next().charAt(0);
-				}		
+				}
+				while (respuesta  != 's' || respuesta != 'S' || respuesta != 'n'|| respuesta != 'N');		
 						
 			 }
  }			 			
