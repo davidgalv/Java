@@ -11,7 +11,6 @@
  *	 Hacer inverso
  * Preguntar si quiere seguir.
  * Fin mientras.
- * Comprobar datos
  * Fin
  * */
  
@@ -30,13 +29,7 @@ public class inversov2 {
 			//Preguntar si quiere ejecutar
 			System.out.println ("Quieres ejecutar el programa?: Si/No");//Preguntar si quiere ejecutar
 			respuesta = teclado.next().charAt(0);
-				
-				//Comprobar datos
-			if (respuesta != 's' || respuesta !='S' || respuesta !='n'|| respuesta !='N') {
-					System.out.println ("Escriba Si o No");
-					respuesta = teclado.next().charAt(0);
-				}
-			else {		
+					
 				while (respuesta == 's' || respuesta == 'S') {
 				
 				//Obtener Numero
@@ -54,9 +47,8 @@ public class inversov2 {
 				//Preguntar si quiere seguir
 				System.out.println("Quieres volver a hacerlo?: (s/n)");
 				respuesta = teclado.next().charAt(0);
+					
 					} //Fin while	
-				}			
-							
 	} //Fin programa
 }
 

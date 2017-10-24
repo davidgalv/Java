@@ -4,10 +4,9 @@
  * 			 Si el numero > 0 entonces se queda asi.
  * El numero se consigue leyendolo del teclado. Se utilizarán numeros enteros.
  * 
- * Pseudocódigo Generalizado.
+ * Pseudocódigo Generalizado:
  * Inicio
  * Preguntar si quiere ejecutar
- * Comprobar datos
  * Mientras el usuario quiera
  * Leer Número
  * Hacer valor absoluto
@@ -31,7 +30,7 @@ public class valorabsoluto
 				System.out.println ("Desea ejecutar el programa? Si/No");
 				respuesta = teclado.next().charAt(0);
 				
-				while (respuesta == 's' || respuesta == 'S') {
+				while (respuesta == 's' || respuesta == 'S') { //Mientras el usuario quiera
 				
 				//leerNumero
 				System.out.println ("Dame el numero");
@@ -48,13 +47,6 @@ public class valorabsoluto
 					System.out.println ("Quiere volver a hacerlo?");
 					respuesta = teclado.next().charAt(0);
 				}
-				
-				//Comprobar datos 
-				do  {
-					System.out.println ("Escriba Si o No");
-					respuesta = teclado.next().charAt(0);
-				}
-				while (respuesta  != 's' || respuesta != 'S' || respuesta != 'n'|| respuesta != 'N');		
-						
-			 }
- }			 			
+					
+	}	
+}		 			
