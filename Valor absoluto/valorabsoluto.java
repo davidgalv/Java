@@ -6,11 +6,11 @@
  * 
  * Pseudocódigo Generalizado:
  * Inicio
- * Preguntar si quiere ejecutar
- * Mientras el usuario quiera
- * Leer Número
- * Hacer valor absoluto
- * Fin mientras
+ * 	Preguntar si quiere ejecutar y validar
+ * 	Mientras el usuario quiera
+ * 		Leer Número
+ * 		Hacer valor absoluto y mostrar resultados
+ * 	Fin mientras
  * Fin
  * */
  
