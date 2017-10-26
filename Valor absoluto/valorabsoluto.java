@@ -30,22 +30,33 @@ public class valorabsoluto
 				System.out.println ("Desea ejecutar el programa? Si/No");
 				respuesta = teclado.next().charAt(0);
 				
-				while (respuesta == 's' || respuesta == 'S') { //Mientras el usuario quiera
-				
-				//leerNumero
-				System.out.println ("Dame el numero");
-				numero = teclado.nextFloat();
-				
-				//hacerValorAbsoluto
-				if (numero >= 0) {
-					System.out.println ("El valor absoluto es "+numero);
-				 }
-				else 
-					System.out.println ("El valor absoluto es "+numero*(-1));
-				
-				//Preguntar si quiere volver a hacerlo
-					System.out.println ("Quiere volver a hacerlo?");
+				do {
+					System.out.println ("Si o no?");
 					respuesta = teclado.next().charAt(0);
+				}
+				while (respuesta !='s' && respuesta !='S' && respuesta !='n' && respuesta !='N');	
+				
+					while (respuesta == 's' || respuesta == 'S') { //Mientras el usuario quiera
+					
+					//leerNumero
+					System.out.println ("Dame el numero");
+					numero = teclado.nextFloat();
+					
+					//hacerValorAbsoluto
+					if (numero >= 0) {
+						System.out.println ("El valor absoluto es "+numero);
+					 }
+					else 
+						System.out.println ("El valor absoluto es "+numero*(-1));
+					
+					//Preguntar si quiere volver a hacerlo
+						System.out.println ("Quiere volver a hacerlo?");
+						respuesta = teclado.next().charAt(0);
+						do {
+						System.out.println ("Si o no?");
+						respuesta = teclado.next().charAt(0);
+						}
+						while (respuesta !='s' && respuesta !='S' && respuesta !='n' && respuesta !='N');
 				}
 					
 	}	

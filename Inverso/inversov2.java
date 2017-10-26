@@ -5,7 +5,7 @@
  * 
  * Pseudocódigo Generalizado.
  * Inicio
- * Preguntar si quiere ejecutar.
+ * Preguntar, leer y validar si quiere ejecutar.
  * Mientras yo quiera.
  * 	 Leer Número
  *	 Hacer inverso
@@ -30,6 +30,12 @@ public class inversov2 {
 			System.out.println ("Quieres ejecutar el programa?: Si/No");//Preguntar si quiere ejecutar
 			respuesta = teclado.next().charAt(0);
 					
+			do {
+				System.out.println ("Si/No");
+				respuesta = teclado.next().charAt(0);
+			}
+			while (respuesta !='s' && respuesta !='S' && respuesta !='n' && respuesta !='N');
+			
 				while (respuesta == 's' || respuesta == 'S') {
 				
 				//Obtener Numero
@@ -47,6 +53,11 @@ public class inversov2 {
 				//Preguntar si quiere seguir
 				System.out.println("Quieres volver a hacerlo?: (s/n)");
 				respuesta = teclado.next().charAt(0);
+					do {
+					System.out.println ("Si/No");
+					respuesta = teclado.next().charAt(0);
+					}
+					while (respuesta !='s' && respuesta !='S' && respuesta !='n' && respuesta !='N');
 					
 					} //Fin while	
 	} //Fin programa
