@@ -23,15 +23,13 @@ public class inversov2 {
 		//Inicio
 		
 		Scanner teclado = new Scanner (System.in);
-		float numero;
-		float inversa;
+		int numero;
+		int inversa;
 		char respuesta;
-			//Preguntar si quiere ejecutar
-			System.out.println ("Quieres ejecutar el programa?: Si/No");//Preguntar si quiere ejecutar
-			respuesta = teclado.next().charAt(0);
+			//Preguntar si quiere ejecutar y validar
 					
 			do {
-				System.out.println ("Si/No");
+				System.out.println ("Quieres ejecutar el programa?: Si/No");//Preguntar si quiere ejecutar
 				respuesta = teclado.next().charAt(0);
 			}
 			while (respuesta !='s' && respuesta !='S' && respuesta !='n' && respuesta !='N');
@@ -40,7 +38,7 @@ public class inversov2 {
 				
 				//Obtener Numero
 				System.out.println ("Dame el numero");
-				numero = teclado.nextFloat();
+				numero = teclado.nextInt();
 			
 					//Hacer Inverso
 					if (numero != 0) {
